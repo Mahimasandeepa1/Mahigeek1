@@ -24,13 +24,19 @@ div{
     row-gap:20px;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 570px) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 571px) and (max-width: 860px) {
     .container{
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media (min-width: 761) and (max-width: 1159px) {
+@media (min-width: 861) and (max-width: 1159px) {
     .container{
         grid-template-columns: 1fr 1fr 1fr;
     }

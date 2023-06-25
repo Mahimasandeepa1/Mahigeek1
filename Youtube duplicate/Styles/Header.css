@@ -1,0 +1,136 @@
+.header{
+    display:flex;
+    flex-direction:row;
+    height:50px;
+    justify-content:space-between;
+    position:fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    background-color:white;
+    z-index:100;
+}
+
+.header img{
+    cursor:pointer;
+}
+
+.header button{
+    cursor:pointer;
+}
+
+.leftsc{
+    display:flex;
+    align-items:center;
+    margin-left:26px;
+}
+
+.bars{
+    height:24px;
+    margin-right:18px;
+}
+
+.ytlogo{
+   height:22px
+}
+
+.middlesc{
+    display:flex;
+    align-items:center;
+    flex:1;
+    max-width: 650px;
+    margin-left:15px;
+    margin-right:15px;
+    
+
+
+}
+
+.searchbar{
+    height:33px;
+    border-width:1px;
+    border-style:solid;
+    border-color:rgb(146, 146, 146);
+    padding-left:16px;
+    padding-top:4px;
+    flex:1;
+    width:0;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+
+.searchbar::placeholder{
+    font-family:Arial;
+    font-size:16px;
+}
+
+.searchlogo{
+    height:24px;
+}
+
+.searchbutton{
+    height:40px;
+    border-width:1px;
+    border-style:solid;
+    border-color:rgb(146, 146, 146);
+    width:64px;
+    background-color:rgb(228, 228, 228);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius:20px;
+    margin-left:-1px;
+    padding-top:5px;
+    
+}
+
+.voice{
+    margin-left:10px;
+    height:40px;
+    width:40px;
+    border-radius:20px;
+    border-style:solid;
+    border-width:0px;
+}
+
+.rightsc{
+   display:flex;
+   align-items:center;
+   
+}
+
+.ytapps{
+    width:26px;
+    margin-right:22px;
+}
+
+.upload{
+    width:26px;
+    margin-right:22px;
+}
+
+.notifications{
+    height:26px;
+}
+
+.userlogo{
+    height:36px;
+    border-radius:18px;
+    margin-right:20px;
+    margin-left:22px;
+}
+
+.notificationdiv{
+    position:relative;
+}
+
+.notnumber{
+    position:absolute;
+    top:1px;
+    right:0px;
+    background-color:rgb(236, 0, 0);
+    padding-left:4px;
+    padding-right:4px;
+    border-radius:12px;
+    font-size:12px;
+    font-family:arial;
+}

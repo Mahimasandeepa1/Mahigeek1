@@ -1,23 +1,25 @@
 .header{
-    background-color:rgb(162, 0, 255); 
+    background-color:rgba(255, 255, 255, 0.075); 
     display:flex; 
     flex-direction:row; 
     height:60px; 
     align-items:center; 
     justify-content:space-between;
     position:fixed; 
-    top:0px; 
-    left:0px; 
-    right:0px; 
+    top:10px; 
+    left:10px; 
+    right:10px; 
     z-index:100;
-    border-bottom-width:1px;
-    border-bottom-color:rgb(87, 87, 87);
-    border-bottom-style:solid;
-    box-shadow:0px 0px 10px rgb(29, 29, 29);
+    border-radius:13px;
+    border-width:1px;
+    border-color:rgba(255, 255, 255, 0.171);
+    border-style:solid;
+    box-shadow:0px 0px 10px rgba(29, 29, 29, 0.603);
     padding-right:20px;
     padding-left:20px;
     padding-top:4px;
     padding-bottom:4px;
+    backdrop-filter: blur(10px); 
 }
 
 .leftsection{
@@ -76,6 +78,7 @@
     border-top-left-radius:15px; 
     border-bottom-left-radius:15px; 
     border:none;
+    background-color:rgba(255, 255, 255, 0.363);
 
 }
 
@@ -92,12 +95,13 @@
     display:flex;
     align-items:center;
     justify-content:center;
+    background-color:rgba(255, 255, 255, 0.363);
 }
 
 .searchbar::placeholder{
     font-size:17px;
     vertical-align:center;
-    color:black;
+    color:rgb(255, 255, 255);
     font-weight:300;
 }
 

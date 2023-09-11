@@ -1,13 +1,54 @@
 .imagediv{
-    margin-top:10px;
-    box-shadow: 0px 0px 13px rgba(53, 53, 53, 1);
+    position:relative;
+    padding-top:17px;
+    box-shadow: 0px 0px 15px rgb(34, 34, 34);
     border-radius:10px;
     transition:box-shadow 300ms, border-radius 300ms;
     display:flex;
     flex-direction:column;
     justify-content:space-between;
+    align-items:center;
     max-width:277px;
+    backdrop-filter: blur(10px); 
+    border-style: solid;
+    border-width:1px;
+    border-color:rgba(255, 255, 255, 0.171);
+    background-color:rgba(255, 255, 255, 0.062);
 
+}
+
+
+.labeltext{
+    position:absolute;
+    background-color:rgba(128, 128, 128, 0.39);
+    color:white; 
+    bottom:27.1%;
+    left:7.5%;
+    right:7.5%; 
+    padding-bottom:6px;  
+    padding-left:6px;  
+    padding-right:6px;  
+    padding-top:6px;  
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    transition:opacity 0.5s, transform 300ms;
+    backdrop-filter: blur(10px); 
+
+}
+
+.accimage{
+    width:85%;
+    transition:transform 300ms, border-radius 300ms;
+    cursor:pointer;
+    border-radius:10px;
+    border-style: solid;
+    border-width:1px;
+    border-color:rgba(255, 255, 255, 0.295);
+}
+
+.accimage:hover + .labeltext{
+    opacity:0%;
+    transform:scale(1.05);
 }
 
 .imagediv:hover{
@@ -15,131 +56,24 @@
 }
 
 .title{
-    margin-top: 8px;
+    margin-top: 10px;
     margin-bottom:13px;
-    margin-left:8px;
+    margin-left:10px;
+    margin-right:10px;
     font-size:20px;
     transition:opacity 300ms;
     cursor:pointer; 
+    color:white;
+    display:block;
 }
 
-.friends{
-    margin-top:0px;
-    font-weight:300;
-    margin-left:8px;
-    font-size:15px;
-    color:rgb(92, 92, 92);
-    cursor:pointer;
-    display:none;
-    
-}
 
-.accimage{
-    width:100%;
-    margin-bottom:0px;
-    transition:transform 300ms, border-radius 300ms;
-    cursor:pointer;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-}
+
+
 
 .accimage:hover{
     transform:scale(1.05);
     border-radius:15px;
     box-shadow:0px 0px 14px rgb(28, 62, 255);
     
-}
-
-.folbutton{
-
-    height:40px;
-    border-width:0px;
-    border-radius:10px;
-    margin-bottom:12px;
-    color:white;
-    background-color:rgb(66, 66, 255);
-    font-size:15px;
-    transition:color 400ms, background-color 300ms;
-    cursor:pointer;
-    position:relative;
-    display:flex;
-    flex:1;
-    max-width:150px;
-    align-items:center;
-    justify-content:center;
-    margin-right:6px;
-
-   
-}
-
-.folbutton:hover{
-    background-color:white;
-    color:rgb(0, 0, 255);
-    border-width:3px;
-    border-style:solid;
-    border-color:rgb(66, 66, 255);
-    
-}
-
-.likebutton{
-    height:40px;
-    border-width:0px;
-    border-radius:10px;
-    margin-bottom:12px;
-    color:white;
-    background-color:rgb(255, 33, 33);
-    font-size:15px;
-    transition:color 400ms, background-color 300ms;
-    cursor:pointer;
-    flex:1;
-    width:0;
-    max-width:70px;
-}
-
-.likebutton:hover{
-    background-color:white;
-    color:rgb(255, 0, 0);
-    border-width:3px;
-    border-style:solid;
-    border-color:rgb(255, 33, 33);
-    
-}
-
-.buttondiv{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    padding-left:12px;
-    padding-right:12px;
-
-    
-
-}
-
-.folbutton:hover .subscribe{
-    opacity:100%;
-}
-
-.subscribe{
-    width:100px;
-    position:absolute;
-    background-color:yellow;
-    color:black;
-    padding-top:8px;
-    border-radius:8px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    top:-90px;
-    box-shadow:0px 0px 14px rgb(44, 44, 44);
-    opacity:0%;
-    transition:opacity 300ms;
-    pointer-events:none;
-}
-
-.subscribe img{
-    width:45px;
-    margin-top:4px;
-    margin-bottom:7px;
 }

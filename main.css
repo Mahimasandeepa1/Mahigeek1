@@ -9,9 +9,12 @@ a{
 }
 
 body{
-    padding-top:70px;
-    padding-left:100px;
-    padding-right:20px;
+    padding-top:90px;
+    padding-left:110px;
+    padding-right:10px;
+    background-image: url('Images/abstract-fluid-art-colors-free-vector.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
 }
 
 div{
@@ -23,6 +26,7 @@ div{
     grid-template-columns: 1fr 1fr 1fr;
     column-gap:30px;
     row-gap:20px;
+    
 }
 
 

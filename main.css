@@ -19,19 +19,11 @@ a{
 }
 
 .secondcontainer{
-   
-    margin-right:30px;
-    height:200vh;
+    height:100%;
     flex:1;
     display:flex;
     flex-direction:column;
-    
-    background-image:url('Images/laptop.png');
-    background-size:70%;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-position:50% 75px;
-    
+    justify-content: start; 
     align-items:center;
 
    
@@ -65,19 +57,24 @@ a{
     font-size:15px;
     margin-left:10px;
     margin-bottom:30px;
+    text-align: justify;
 }
 
 .introtxt{
     font-size:80px;
     color:white;
-    margin-top:630px;
+    margin-top:23%;
     margin-bottom:15px;
 }
 
 
 body{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
     margin:0px;
     padding-top:13px;
+    padding-bottom:20px;
     padding-left:20px;
     padding-right:20px;
     background-image:linear-gradient(rgba(0, 0, 0, 0.096),rgba(0, 0, 0, 0.11) ),  url('Images/abstract-fluid-art-colors-free-vector.jpg');

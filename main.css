@@ -54,7 +54,7 @@ a{
 .introtext{
     width:70%;
     margin:0px;
-    color:white;
+    color:rgb(255, 255, 255);
     font-size:15px;
     margin-left:10px;
     margin-bottom:30px;
@@ -67,6 +67,9 @@ a{
     color:white;
     margin-top:23%;
     margin-bottom:15px;
+    margin-left:20px;
+    margin-right:20px;
+    text-align:center;
 }
 
 
@@ -99,11 +102,24 @@ div{
     
 }
 
-@media (min-width: 200px) and (max-width: 600px) {
+@media (min-width: 200px) and (max-width: 800px) {
+    .container{
+        grid-template-columns: 1fr 1fr;
+        width:100%;
+    }
+
+    .secondcontainer{
+        display:none;
+    }
+}  
+
+@media (max-width: 470px) {
     .container{
         grid-template-columns: 1fr;
+        justify-items: center;
     }
-}   
+}
+
 
 
 
@@ -134,6 +150,7 @@ div{
   touch-action: manipulation;
   white-space: nowrap;
   cursor: pointer;
+  margin-bottom:115px;
 }
 
 .button-64:active,

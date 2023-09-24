@@ -102,7 +102,7 @@ div{
     
 }
 
-@media (min-width: 200px) and (max-width: 800px) {
+@media (min-width: 471px) and (max-width: 800px) {
     .container{
         grid-template-columns: 1fr 1fr;
         width:100%;
@@ -113,11 +113,32 @@ div{
     }
 }  
 
+
+
+
+
 @media (max-width: 470px) {
     .container{
         grid-template-columns: 1fr;
         justify-items: center;
+        width:100%;
     }
+
+    .secondcontainer{
+        display:none;
+    }
+
+
+    .webtitle, .leftsection{
+        display:none;
+        position:fixed;
+    }
+
+
+
+
+
+
 }
 
 

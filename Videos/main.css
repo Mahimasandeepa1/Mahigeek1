@@ -19,19 +19,12 @@ a{
 }
 
 .secondcontainer{
-   
-    margin-right:30px;
-    height:200vh;
+    height:100%;
+    width:100%;
     flex:1;
     display:flex;
     flex-direction:column;
-    justify-content: start;
-    background-image:url('Images/laptop.png');
-    background-size:70%;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-position:50% 600px;
-    
+    justify-content: start; 
     align-items:center;
 
    
@@ -58,26 +51,35 @@ a{
     
 }
 
-.lorem{
+.introtext{
     width:70%;
     margin:0px;
-    color:white;
+    color:rgb(255, 255, 255);
     font-size:15px;
     margin-left:10px;
     margin-bottom:30px;
+    text-align: center;
+    
 }
 
 .introtxt{
-    font-size:80px;
+    font-size:75px;
     color:white;
     margin-top:23%;
     margin-bottom:15px;
+    margin-left:20px;
+    margin-right:20px;
+    text-align:center;
 }
 
 
 body{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
     margin:0px;
     padding-top:13px;
+    padding-bottom:20px;
     padding-left:20px;
     padding-right:20px;
     background-image:linear-gradient(rgba(0, 0, 0, 0.096),rgba(0, 0, 0, 0.11) ),  url('Images/abstract-fluid-art-colors-free-vector.jpg');
@@ -94,17 +96,108 @@ div{
     width:47%;
     display:grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr;
     column-gap:30px;
     row-gap:20px;
     
 }
 
-@media (min-width: 200px) and (max-width: 600px) {
+@media (min-width: 471px) and (max-width: 800px) {
+    .container{
+        grid-template-columns: 1fr 1fr;
+        width:100%;
+    }
+
+    .secondcontainer{
+        display:none;
+    }
+}  
+
+
+
+
+
+@media (max-width: 470px) {
     .container{
         grid-template-columns: 1fr;
+        justify-items: center;
+        width:100%;
     }
-}   
 
+    .secondcontainer{
+        display:none;
+    }
+
+
+    .webtitle, .leftsection{
+        display:none;
+        position:fixed;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-bottom:115px;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
 
 
 

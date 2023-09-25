@@ -25,6 +25,8 @@
  
 }
 
+
+
 .rightsection{
 
     display:flex;
@@ -47,16 +49,23 @@
 
 .headerbutton{
     color:white;
-    height:100%;
-    width:90px;
+    height:90%;
+    width:83px;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
     cursor:pointer;
     transition:background-color 200ms, box-shadow 200ms;
-    margin-right:1px;
+    margin-right:3px;
+    border-radius:14px;
 
+
+}
+
+.headerbutton a{
+    width:100%;
+    text-align:center;
 
 }
 

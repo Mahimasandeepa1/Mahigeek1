@@ -8,6 +8,16 @@ a{
     margin:0px;
 }
 
+body::-webkit-scrollbar {
+    width: 0; 
+    background: transparent; 
+}
+
+.grid-container::-webkit-scrollbar {
+    width: 0; 
+    background: transparent; 
+}
+
 .maincontainer{
     width:100%;
     height:100%;
@@ -15,13 +25,33 @@ a{
     flex-direction:row;
     align-items: start;
     justify-content: space-between;
+    
 
 }
 
-.secondcontainer{
+.grid-container{
     height:100%;
-    width:100%;
-    flex:1;
+    width:44%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    column-gap:20px;
+    row-gap:20px;
+
+    max-height:100%;
+
+  
+    justify-items:center;
+    
+}
+
+.secondcontainer{
+    position:fixed;
+    left:44%;
+    right:0px;
+    top:103px;
+    
+    
     display:flex;
     flex-direction:column;
     justify-content: start; 
@@ -31,6 +61,7 @@ a{
     
     
 }
+
 
 .joinbutton{
     width:100px;
@@ -65,7 +96,7 @@ a{
 .introtxt{
     font-size:75px;
     color:white;
-    margin-top:23%;
+    margin-top:16%;
     margin-bottom:15px;
     margin-left:20px;
     margin-right:20px;
@@ -74,12 +105,16 @@ a{
 
 
 body{
+    position:relative;
     height:100%;
     margin:0px;
-    padding-top:18px;
+    padding-top:103px;
     padding-bottom:20px;
     padding-left:20px;
     padding-right:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
    
   
 }
@@ -104,30 +139,14 @@ body{
     z-index: -1;
   }
   
-  #content {
-    position: relative;
-    z-index: 1;
-    color: #fff;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-  }
+
 
 
 div{
     border-radius:inherit;
 }
 
-.container{
-    height:100%;
-    width:47%;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:1fr 1fr;
-    column-gap:30px;
-    row-gap:20px;
-    
-}
+
 
 @media (min-width: 471px) and (max-width: 800px) {
     .container{
@@ -198,7 +217,6 @@ div{
   touch-action: manipulation;
   white-space: nowrap;
   cursor: pointer;
-  margin-bottom:115px;
 }
 
 .button-64:active,

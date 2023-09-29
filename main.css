@@ -82,6 +82,16 @@ body::-webkit-scrollbar {
     
 }
 
+.introtxt{
+    font-size:75px;
+    color:white;
+    margin-top:19%;
+    margin-bottom:15px;
+    margin-left:20px;
+    margin-right:20px;
+    text-align:center;
+}
+
 .description{
     width:70%;
     margin:0px;
@@ -91,16 +101,6 @@ body::-webkit-scrollbar {
     margin-bottom:30px;
     text-align: center;
     
-}
-
-.introtxt{
-    font-size:75px;
-    color:white;
-    margin-top:16%;
-    margin-bottom:15px;
-    margin-left:20px;
-    margin-right:20px;
-    text-align:center;
 }
 
 

@@ -8,6 +8,16 @@ a{
     margin:0px;
 }
 
+body::-webkit-scrollbar {
+    width: 0; 
+    background: transparent; 
+}
+
+.grid-container::-webkit-scrollbar {
+    width: 0; 
+    background: transparent; 
+}
+
 .maincontainer{
     width:100%;
     height:100%;

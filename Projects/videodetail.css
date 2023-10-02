@@ -1,0 +1,109 @@
+.imagediv{
+    width:100%;
+    padding-top:17px;
+    box-shadow: 0px 0px 15px rgba(34, 34, 34, 0.623);
+    border-radius:10px;
+    transition:box-shadow 300ms, border-radius 300ms;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    max-width:277px;
+    backdrop-filter: blur(5px); 
+    border-style: solid;
+    border-width:1px;
+    border-color:rgba(255, 255, 255, 0.171);
+    background-color:rgba(255, 255, 255, 0.062);
+    margin:0px;
+    
+
+}
+
+
+.imgbackgrounddiv{
+    position:relative;
+    height:170px;
+    background-position: center;
+    background-size: cover;
+    width:85%;
+    transition:transform 300ms, border-radius 300ms, box-shadow 300ms;
+    cursor:pointer;
+    border-radius:10px;
+    border-style: solid;
+    border-width:1px;
+    border-color:rgba(255, 255, 255, 0.425);
+}
+
+.imgbackgrounddiv:hover{
+    transform:scale(1.05);
+    border-radius:15px;
+    box-shadow:0px 0px 14px rgb(28, 62, 255);
+}
+
+.imgbackgrounddiv:hover .labeltext{
+    opacity:0%;
+}
+
+
+.labeltext{
+    position:absolute;
+    background-color:rgba(255, 0, 0, 0.39);
+    color:white; 
+    bottom:0px;
+    left:0px;
+    right:0px; 
+    padding-bottom:6px;  
+    padding-left:6px;  
+    padding-right:6px;  
+    padding-top:6px;  
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    transition:opacity 0.5s, transform 300ms;
+    backdrop-filter: blur(10px); 
+    text-align:center;
+
+}
+
+.accimage{
+
+    width:85%;
+    transition:transform 300ms, border-radius 300ms;
+    cursor:pointer;
+    border-radius:10px;
+    border-style: solid;
+    border-width:1px;
+    border-color:rgba(255, 255, 255, 0.295);
+}
+
+.accimage:hover + .labeltext{
+    opacity:0%;
+    transform:scale(1.05);
+}
+
+.imagediv:hover{
+    box-shadow: 0px 0px 13px rgb(255, 0, 0);
+}
+
+.title{
+    margin-top: 10px;
+    margin-bottom:13px;
+    margin-left:10px;
+    margin-right:10px;
+    font-size:20px;
+    transition:opacity 300ms;
+    cursor:pointer; 
+    color:white;
+    display:block;
+    text-align:center;
+}
+
+
+
+
+
+.accimage:hover{
+    transform:scale(1.05);
+    border-radius:15px;
+    box-shadow:0px 0px 14px rgb(28, 62, 255);
+    
+}

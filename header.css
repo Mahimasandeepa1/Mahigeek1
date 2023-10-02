@@ -50,7 +50,7 @@
 .headerbutton{
     color:white;
     height:90%;
-    width:83px;
+    
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -77,6 +77,8 @@
 
 .headerbutton p{
     font-size:17px;
+    margin-left:17px;
+    margin-right:17px;
 }
 
 .introimage{

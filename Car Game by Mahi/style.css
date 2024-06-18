@@ -1,0 +1,153 @@
+.background{
+    background-image:url("Images/Road2.png");
+    background-size:100%;
+    overflow:hidden;
+
+}
+
+.mainCar{
+    position:absolute;
+    height:150px;
+    margin-top:460px;
+    margin-left:500px;
+    z-index:50;
+
+}
+
+.score{
+    color:rgb(255, 0, 0);
+    font-family:Roboto;
+    font-size:55px;
+    font-weight:bold;
+    opacity:100%;
+}
+
+.scoreName{
+    color:rgb(255, 255, 255);
+    font-family:Roboto;
+    font-size:55px;
+    font-weight:bold;
+}
+
+.scoreBox{
+    position:absolute;
+    background-color:blue;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:20px;
+    padding-right:20px;
+    border-radius:20px;
+    margin-left:20px;
+    margin-top:20px;
+    border-width:5px;
+    border-style:solid;
+    border-color:white;
+    opacity:0;
+    transition:opacity 0.5s;
+    backdrop-filter: blur(10px); 
+    z-index:206;
+
+
+}
+
+.startingScreen{
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-image:url("Images/startingBackground.jpg");
+    background-size:100%;
+    background-position-y:-86px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    transition:opacity 0.5s;
+    z-index:100;
+}
+
+.startButtonHidden{
+    background-color:rgb(255, 255, 255);
+    opacity:0;
+    width:474px;
+    height:116px;
+    border-radius:17px;
+    cursor:pointer;
+    transition:opacity 0.3s;
+    
+}
+
+.startButtonHidden:hover{
+    opacity:0.2;
+}
+
+.pauseImage{
+    position:absolute;
+    width:60px;
+    right:25px;
+    top:20px;
+    cursor:pointer;
+
+
+}
+
+.minorCar{
+    position:absolute;
+    margin-top:500px;
+    height:150px;
+    
+    margin-left:300px;
+
+}
+
+.gameOverEndScreen{
+    position:absolute;
+    z-index:200;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    display:none;
+    opacity:0%;
+    transition:opacity 0.5s;
+    backdrop-filter:blur(10px);
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.gameOverText{
+
+    font-size:60px;
+    font-family:Roboto;
+    font-weight:bold;
+    color:white;
+    transition:opacity 0.5s;
+    margin-bottom:20px;
+
+}
+
+.playAgainButton{
+    width:180px;
+    height:60px;
+    border-style:solid;
+    border-radius:10px;
+    background-color:red;
+    font-family:Roboto;
+    font-weight:bold;
+    font-size:25px;
+    font-weight:bold;
+    border-width:3px;
+    border-color:blue;
+    cursor:pointer;
+    transition:background-color 0.4s;
+}
+
+.playAgainButton:hover{
+    background-color:rgb(255, 58, 58);
+}

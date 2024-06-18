@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mahi Car Race</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body class="background" id="background" onkeyup="keyboardInput(event);">
+
+      <div class="scoreBox" id="scoreBox">
+        <div class="scoreName" id="scoreName">Score</div>
+        <div class="score" id="score">0</div> 
+      </div>
+
+      <img src="Images/pauseImage.png" class="pauseImage" id="pauseImage" onclick="pauseContinue();"/>
+
+      <img src="Images/MainCar.png" class="mainCar" id="mainCar"/>
+
+      <div class="gameOverEndScreen" id="gameOverEndScreen">
+        <div class="gameOverText" id="gameOverText">Game Over</div>
+        <button class="playAgainButton" id="playAgainButton" onclick="restartGame();">Play Again</button>
+      </div>
+
+      <div class="startingScreen" id="startingScreen">
+        <div class="startButtonHidden" id="startButtonHidden" onclick="gameStart();"></div>
+      </div>
+      
+
+
+        <script src="script.js"></script>
+    </body>
+    
+</html>
